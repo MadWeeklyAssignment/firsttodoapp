@@ -71,5 +71,9 @@ public class TodoActivity extends AppCompatActivity {
 
     }
 
-   
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt(TODO_INDEX, mTodoIndex);
+    }
 }
